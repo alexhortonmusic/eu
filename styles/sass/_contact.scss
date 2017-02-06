@@ -1,0 +1,21 @@
+.contact {
+
+  .chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 20px auto;
+    background-color: #d43906;
+
+    p {
+      text-align: center;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+}

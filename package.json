@@ -1,0 +1,15 @@
+{
+  "name": "elevate-placeholder",
+  "version": "1.0.0",
+  "description": "Elevate United placeholder site while we design large scale site for re-launch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Horton",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
+}

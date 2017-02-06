@@ -1,0 +1,20 @@
+{
+  "name": "elevate-placeholder",
+  "description": "Elevate United placeholder site while we design large scale site for re-launch",
+  "main": "index.js",
+  "authors": [
+    "Alex Horton"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

@@ -1,21 +1,60 @@
+$pop: #ef6611;
+
+.fill {
+    background-color: $pop;
+    transition: 0.6s;
+}
+
 .contact {
+  width: 180px;
+  height: 55px;
+  margin: 40px auto;
 
   .chat {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    padding-top: 5px;
+    font-weight: bolder;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 180px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    transition: 0.6s;
 
-    width: 200px;
-    height: 40px;
-    border: 1px solid white;
-    border-radius: 30px;
-    margin: 20px auto;
-    background-color: #d43906;
+    svg {
+      height: 55px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
 
-    p {
-      text-align: center;
-      margin: 0;
-      font-size: 1.5rem;
+    rect {
+      stroke: $pop;
+      stroke-width: 3;
+      stroke-dasharray: 422, 0;
+      transition: 0.5s;
+    }
+  }
+
+  .chat:hover {
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #2f333d;
+
+    rect {
+      fill: none;
+      stroke-width: 5;
+      stroke-dasharray: 15, 350;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
 }

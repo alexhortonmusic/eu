@@ -1,7 +1,6 @@
 
 // ------ floated "We Are" at top of page -------
 const weArr = [
-  'makers',
   'doers',
   'thinkers',
   'crafters',
@@ -11,7 +10,8 @@ const weArr = [
   'pioneers',
   'pathfinders',
   'shapers',
-  'dreamers'
+  'dreamers',
+  'makers'
 ]
 
 const dynamic = $('.dynamic')
@@ -36,3 +36,13 @@ let weArrLoop = () => {
 }
 
 setInterval(weArrLoop, 2000)
+
+// hover on let's chat
+$('.contact').hover(
+  function () {
+    $('.contact').removeClass('fill')
+  },
+  function () {
+    $('.contact').addClass('fill')
+  }
+)

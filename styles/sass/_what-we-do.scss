@@ -1,10 +1,15 @@
+$pop: #ef6611;
+
 .what-we-do {
-  width: 70%;
-  margin: 0 auto;
+  padding: 80px 0 0;
 
   p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 200;
     text-align: center;
+  }
+
+  p:first-child {
+    margin-top: 0;
   }
 }

@@ -1,13 +1,21 @@
+$pop: #ef6611;
+
 .we-are {
+  align-self: center;
+  width: 90%;
+  margin: 135px auto 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 130px;
+  font-size: 7rem;
 
-  font-size: 5rem;
 
   .static {
-    width: 50%;
+    font-size: 6rem;
+    width: 45%;
+    margin-top: 26px;
+    color: #fff;
 
     p {
       margin: 0;
@@ -16,23 +24,23 @@
   }
 
   .dynamic { //get a different font for this
-    width: 50%;
+    width: 55%;
     font-weight: 200;
-    color: #d43906;
-    font-family: 'Special Elite', cursive;
+    color: $pop;
+    font-family: 'the_flower_cityregular', cursive;
 
     p {
-      margin: 18px 0 0; // margin-top must be the same as keyframe 'to'
+      margin: 38px 0 0; // margin-top must be the same as keyframe 'to'
       animation: slide-up 0.7s ease-out;
     }
 
     @keyframes slide-up {
       from {
-        margin-top: 40px;
+        margin-top: 55px;
       }
 
       to {
-        margin-top: 18px;
+        margin-top: 38px;
       }
     }
   }

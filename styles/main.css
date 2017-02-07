@@ -1,5 +1,5 @@
 html {
-  background: url("../img/road-trees.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../img/road-trees.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,77 +9,145 @@ html {
   margin-top: 25px;
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 50px; }
   .header img {
-    width: 500px;
-    height: 120px; }
+    width: 400px;
+    height: 96px; }
 
 .we-are {
+  align-self: center;
+  width: 90%;
+  margin: 135px auto 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 130px;
-  font-size: 5rem; }
+  font-size: 7rem; }
   .we-are .static {
-    width: 50%; }
+    font-size: 6rem;
+    width: 45%;
+    margin-top: 26px;
+    color: #fff; }
     .we-are .static p {
       margin: 0;
       text-align: right; }
   .we-are .dynamic {
-    width: 50%;
+    width: 55%;
     font-weight: 200;
-    color: #d43906;
-    font-family: 'Special Elite', cursive; }
+    color: #ef6611;
+    font-family: 'the_flower_cityregular', cursive; }
     .we-are .dynamic p {
-      margin: 18px 0 0;
+      margin: 38px 0 0;
       animation: slide-up 0.7s ease-out; }
 @keyframes slide-up {
   from {
-    margin-top: 40px; }
+    margin-top: 55px; }
   to {
-    margin-top: 18px; } }
+    margin-top: 38px; } }
 .what-we-do {
-  width: 70%;
-  margin: 0 auto; }
+  padding: 80px 0 0; }
   .what-we-do p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 200;
     text-align: center; }
+  .what-we-do p:first-child {
+    margin-top: 0; }
 
-.contact .chat {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 200px;
-  height: 40px;
-  border: 1px solid white;
-  border-radius: 30px;
-  margin: 20px auto;
-  background-color: #d43906; }
-  .contact .chat p {
+.fill {
+  background-color: #ef6611;
+  transition: 0.6s; }
+
+.contact {
+  width: 180px;
+  height: 55px;
+  margin: 40px auto; }
+  .contact .chat {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    padding-top: 5px;
+    font-weight: bolder;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 180px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
     text-align: center;
-    margin: 0;
-    font-size: 1.5rem; }
+    transition: 0.6s; }
+    .contact .chat svg {
+      height: 55px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+    .contact .chat rect {
+      stroke: #ef6611;
+      stroke-width: 3;
+      stroke-dasharray: 422, 0;
+      transition: 0.5s; }
+  .contact .chat:hover {
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #2f333d; }
+    .contact .chat:hover rect {
+      fill: none;
+      stroke-width: 5;
+      stroke-dasharray: 15, 350;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.coming-soon p {
+  font-size: 1.1rem;
+  text-align: center; }
+
+.icons {
+  padding-bottom: 80px;
+  width: 7%;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .icons a {
+    color: #ef6611;
+    text-decoration: none;
+    transition: 0.3s; }
+  .icons a:first-child:hover, .icons a:first-child:active {
+    color: #3b5998;
+    transition: 0.3s; }
+  .icons a:nth-child(2):hover, .icons a:nth-child(2):active {
+    color: #1c87bd;
+    transition: 0.3s; }
 
 body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../img/road-trees.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  color: #fff; }
+  font-family: 'montserratthin', sans-serif;
+  font-weight: lighter;
+  color: #2f333d; }
 
-.container {
-  width: 80%;
+.splash {
   height: 100vh;
-  margin: 0 auto; }
-
-.content {
   display: flex;
   flex-direction: column; }
+  .splash .down {
+    align-self: center;
+    margin-top: 100px;
+    color: #fff; }
 
 .bottom-wrap {
-  width: 80%;
-  margin: 0 auto; }
+  font-family: 'montserratextralight';
+  width: 100%;
+  background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

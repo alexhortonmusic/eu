@@ -1,7 +1,7 @@
 {
   "name": "elevate-placeholder",
   "description": "Elevate United placeholder site while we design large scale site for re-launch",
-  "main": "index.js",
+  "main": "server.js",
   "authors": [
     "Alex Horton"
   ],

@@ -1,0 +1,37 @@
+extends includes/layout.pug
+
+block content
+  .splash
+    .header
+      img(src='./img/eu-logo.png', alt='Elevate United Logo')
+    .we-are
+      .static
+        p We are
+      .dynamic
+    h3 You’ve built a business the world needs. Do they know it yet?
+    .down
+      i(class='fa fa-angle-down fa-5x' aria-hidden='true')
+
+  .bottom-wrap
+    form(method='POST')
+      .email
+        label(for='email') Email:
+        input(type='text' name='email' placeholder='a@b.com')
+      .submit
+        input(type='submit')
+    .what-we-do
+      p Cred vexillologist sriracha schlitz.
+      p Pug hella occupy hashtag. Leggings fam la croix cronut waistcoat yr microdosing coloring book, mixtape kombucha cardigan intelligentsia.
+    .contact.fill
+      a(class='chat' href="mailto:hello@elevateunited.com?subject=Let's chat")
+        svg
+          rect(x="0" y="0" fill="none" width="100%" height="100%")
+        p Let's chat
+
+    .coming-soon
+      p Our new site is just up the road. We'll see you there.
+    .icons
+      a(href='https://www.facebook.com/elevateunited/')
+        i(class='fa fa-facebook fa-2x' aria-hidden='true')
+      a(href='https://www.linkedin.com/company/elevate-united')
+        i(class='fa fa-linkedin fa-2x' aria-hidden='true')
